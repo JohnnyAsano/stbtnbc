@@ -1,0 +1,84 @@
+
+/*****************************************
+Responsive styles
+******************************************/
+
+@media screen and (max-width: 1024px) {
+#header, .header-right { float: none; text-align: center; width: 100%; }
+.header-right .widget-content { margin: 0; }
+.header-wrapper:after{display:none;}
+}
+@media screen and (max-width: 960px) {
+.header-wrapper{margin-top:2em}
+#header-navigation{display:none}
+.main-wrapper, .opt-in .opt-in-wrap{    margin-right:0;    width:100%;  }
+.sidebar-wrapper{ background:transparent;box-shadow:0;border:0;clear:both; float: none; max-width:100%;width: auto;  margin-left: 20px;  padding:10px;}
+.sidebar .widget{
+clear:none;
+float:left;
+width:47%;
+margin:0 2% 2% 0}
+
+}
+
+@media screen and (max-width: 768px){
+#header p.description { margin: 0; }
+
+#comment-editor { margin:10px; }
+.footer {
+width: 100%;
+clear: both;
+}
+}
+@media screen and (max-width: 620px){
+.opt-in .inner .ct-wrapper {  padding: 0 10px; }
+.post-title{font-size:1.2rem!important}
+.rdmre{display:none}
+.sidebar-wrapper {
+float:none;
+clear: both;
+width: auto;
+padding: 10px;
+margin:0;
+}
+.sidebar .widget {
+clear:both;
+float:none;
+width:100%;
+}
+.post-body{margin-bottom: 1.5em;}
+}
+
+@media screen and (max-width: 420px){
+#header h1{font-size:3rem!important}
+.comments .comments-content .datetime{    display:block;    float:none;    }
+.comments .comments-content .comment-header {    height:70px;    }
+.thumb{
+clear:both;
+float:none;
+}
+.post {
+    margin: 0 auto;
+    width: 100%;
+}
+.post-labels {
+display:none
+}
+
+.blog-posts.hfeed {
+    -moz-column-gap: 0;
+    -moz-columns: 1 auto;
+}
+
+}
+
+@media screen and (max-width: 320px){
+.footer { width: 100%; }
+.ct-wrapper{ padding:0; }
+.post-body img{  max-width: 100%; }
+.comments .comments-content .comment-replies {    margin-left: 0;    }
+}
+/*****************************************
+Hiding Header Date and Feed Links
+******************************************/
+h2.date-header,span.blog-admin{display:none!important;}
